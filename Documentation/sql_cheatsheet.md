@@ -38,6 +38,10 @@ GRANT ALL PRIVILEGES ON DATABASE database_name to user_name;
 psql -d database_name -f file_name.sql
 
 
+#---- Create table in database from .sql file, import data from csv file ----#
+
+See file seeds/farmers_market_seeds.sql example
+
 
 #---- Retrieve values from database: ----#
 
