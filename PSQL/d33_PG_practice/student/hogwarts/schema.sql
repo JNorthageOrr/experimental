@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS students CASCADE;
+DROP TABLE IF EXISTS houses CASCADE;
+DROP TABLE IF EXISTS death_eater_memberships CASCADE;
+DROP TABLE IF EXISTS spells CASCADE;
+
+CREATE TABLE houses(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR UNIQUE
+);
+
+CREATE TABLE students(
+  id SERIAL PRIMARY KEY,
+  fname VARCHAR NOT NULL,
+  lname VARCHAR NOT NULL,
+  house_id integer REFERENCES houses (id)
+);

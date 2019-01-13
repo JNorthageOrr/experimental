@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS employees;
+
+CREATE TABLE employees(
+  name VARCHAR NOT NULL,
+  age INTEGER NOT NULL,
+  title VARCHAR(50) NOT NULL,
+  badge_number SERIAL PRIMARY KEY
+);
