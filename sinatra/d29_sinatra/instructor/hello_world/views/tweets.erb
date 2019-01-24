@@ -1,0 +1,11 @@
+<h1>Tweets from <%= @user %></h1>
+
+<% if @tweets.empty? %>
+  <h2>No Tweets here</h2>
+<% else %>
+  <ul>
+  <% @tweets.each do |tweet| %>
+      <li><%= tweet %></li>
+  <% end %>
+  </ul>
+<% end %>
