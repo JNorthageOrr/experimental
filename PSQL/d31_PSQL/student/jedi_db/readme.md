@@ -6,3 +6,5 @@
   - __NOTE:__ You will have to be within your `jedi_db` directory.
 
 - Great, now head back into the postgres console and connect to `jedi_db`. You should have a table called `jedis`. Take a look at the jedis therein.
+
+SELECT * FROM SPACE_TRAVELLERS WHERE NATIONS = 'usa';
